@@ -1,0 +1,76 @@
+.overlay_container {
+  position: absolute;
+}
+
+.overlay_container img {
+  width: 15%;
+  height: 100%;
+  margin: 20px;
+}
+.overlay_innerContainer {
+  color: #b1c1f0;
+  width: 50%;
+  padding: 10% 5%;
+}
+.overlay_innerContainer h1 {
+  font-size: 4rem;
+}
+.overlay_innerContainer p {
+  font-size: 1.2rem;
+  margin-top: 30px;
+}
+.overlay_button_container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.overlay_button_conainer_iner {
+  position: absolute;
+  z-index: 1;
+  pointer-events: all;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.overlay_button_container button {
+  background-color: #18254e;
+  color: #fff;
+  padding: 20px 40px;
+  font-size: 24px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: box-shadow 0.2s ease-in-out;
+}
+.overlay_button_container button:hover {
+  box-shadow: 0 0 30px rgba(136, 162, 218, 0.7); /* Change glow intensity on hover */
+  -webkit-box-shadow: 0 0 30px rgba(136, 162, 218, 0.7); /* WebKit prefix for box-shadow property */
+}
+
+.overlay_button_row button {
+  font-size: 14px;
+  padding: 10px 20px;
+}
+
+@media (max-width: 600px) {
+  .overlay_innerContainer {
+    width: fit-content;
+  }
+  .overlay_innerContainer h1 {
+    font-size: 2.7rem;
+  }
+  .overlay_button_container {
+    width: 100%;
+    position: absolute;
+    bottom: -120%;
+  }
+  .overlay_button_conainer_iner {
+    gap: 10px;
+  }
+  .overlay_innerContainer p {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+}
