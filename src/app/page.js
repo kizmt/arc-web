@@ -3,7 +3,7 @@ import { useEffect, useState, Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import styles from "./page.module.css";
 import Stars from "./components/3D/Stars";
-import Modal from "./components/3d/Modal";
+import Modal from "./components/3D/Modal";
 import Overlay from "./components/2D/Overlay/Overlay";
 import Loader from "./components/2D/Loader/Loader";
 
